@@ -73,6 +73,7 @@
         }
 
         input[type="text"],
+        select,
         textarea {
             width: 100%;
             padding: 12px;
@@ -129,7 +130,16 @@
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" placeholder="Enter your username">
 
-                <label for="incident-details">Details of the incident:</label>
+                <label for="incident-type">Type of Incident</label>
+                <select id="incident-type" name="incident-type">
+                    <option value="harassment">Harassment</option>
+                    <option value="theft">Theft</option>
+                    <option value="assault">Assault</option>
+                    <option value="vandalism">Vandalism</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="incident-details">Details of the Incident</label>
                 <textarea id="incident-details" name="incident-details" placeholder="Describe the incident..."></textarea>
 
                 <button type="submit" class="submit-button">Submit Report</button>
