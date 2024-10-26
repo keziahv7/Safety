@@ -4,11 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Report Incident - Women’s Safety Awareness Platform</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Layout and Background */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffe6f0; /* Soft pink background */
+        }
+
+        /* Content Area */
+        .content {
+            background-color: #fff;
+            padding: 40px 30px;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Header Styling */
+        .main-header h1 {
+            color: #ff5e9d; /* Pink color for header */
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .main-header p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        /* Top Bar for Pending Cases */
+        .top-bar {
+            background-color: #ffb3d1; /* Light pink for bar */
+            color: #ff5e9d;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* Form Styling */
+        .form {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            color: #ff5e9d; /* Pink label color */
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            border: 1px solid #ffb3d1; /* Light pink border */
+            border-radius: 8px;
+            resize: vertical;
+            margin-bottom: 20px;
+            outline-color: #ff5e9d; /* Pink outline on focus */
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1rem;
+            color: #fff;
+            background-color: #ff5e9d; /* Pink button */
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #ff2e73; /* Darker pink on hover */
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
     <!-- Main Content Area -->
     <div class="content">
+        <!-- Pending Case Notification Bar -->
+        <div class="top-bar">Review your pending case</div>
+
         <header class="main-header">
             <h1>Report an Incident</h1>
             <p>Your report helps us create a safer environment for everyone.</p>
@@ -17,8 +126,12 @@
         <main>
             <!-- Report Incident Form -->
             <form id="incident-form" class="form">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username">
+
                 <label for="incident-details">Details of the incident:</label>
                 <textarea id="incident-details" name="incident-details" placeholder="Describe the incident..."></textarea>
+
                 <button type="submit" class="submit-button">Submit Report</button>
             </form>
         </main>
