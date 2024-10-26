@@ -3,17 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Report Incident</title>
+    <title>Report Incident - Women’s Safety Awareness Platform</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h2>Report an Incident</h2>
-        <form id="incident-form">
-            <label for="incident-details">Details of the incident:</label>
-            <textarea id="incident-details" placeholder="Describe the incident..."></textarea>
-            <button type="submit">Submit Report</button>
-        </form>
-    </header>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <h2>SafeHer</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="community-posts.html">Community</a></li>
+            <li><a href="report-incident.html" class="active">Report Incident</a></li>
+            <li><a href="emergency-alert.html">Emergency Alert</a></li>
+            <li><a href="contact.html">Contact & Help</a></li>
+            <li><a href="user-login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="content">
+        <header class="main-header">
+            <h1>Report an Incident</h1>
+            <p>Your report helps us create a safer environment for everyone.</p>
+        </header>
+
+        <main>
+            <!-- Report Incident Form -->
+            <form id="incident-form" class="form">
+                <div class="form-group">
+                    <label for="incident-details">Details of the incident:</label>
+                    <textarea id="incident-details" name="incident-details" required placeholder="Describe the incident..."></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit Report</button>
+            </form>
+            
+            <!-- Additional Information Section -->
+            <div class="info-section">
+                <h2>Why Reporting Matters</h2>
+                <p>Reporting incidents can help us track trends and provide the necessary support and awareness to keep our community safe.</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 SafeHer. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
