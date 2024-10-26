@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+/* Signup Container Styles */
+.signup-container {
+    max-width: 400px; /* Limit width for the signup container */
+    margin: 50px auto; /* Center the container */
+    padding: 20px; /* Padding for the container */
+    background-color: white; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Header Styles */
+.signup-header {
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space below header */
+}
+
+.signup-header h1 {
+    font-size: 28px; /* Header size */
+    margin: 0; /* Remove margin */
+}
+
+.signup-header p {
+    font-size: 16px; /* Subheader size */
+    color: #666; /* Subtle text color */
+}
+
+/* Form Styles */
+.signup-form {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Column layout for form groups */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    margin-bottom: 5px; /* Space below label */
+    font-weight: bold; /* Bold labels */
+}
+
+input {
+    padding: 10px; /* Padding for inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 16px; /* Input font size */
+    width: 100%; /* Full width for inputs */
+}
+
+/* Button Styles */
+.cta-button {
+    background-color: #ff6b6b; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Button font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.cta-button:hover {
+    background-color: #e05a5a; /* Darker shade on hover */
+}
+
+/* Additional Links Styles */
+.additional-links {
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Space above links */
+}
+
+.forgot-password {
+    color: #ff6b6b; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+.forgot-password:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Center text */
+    margin-top: 30px; /* Space above footer */
+}
+
+.community-image {
+    width: 100%; /* Full width for the image */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 20px; /* Space above image */
+}
